@@ -3,14 +3,16 @@ import { signInWithGooglePopup, createUserDocumentFromAuth } from '../../utils/f
 const SignIn = () => {
     const logGoogleUser = async () => {
         const {user} = await signInWithGooglePopup();
-        const userDocRef = await createUserDocumentFromAuth(user)
-    }
+        const userDocRef = await createUserDocumentFromAuth(user);
+    };
+
+
 
     return (
         <div>
             <h1>Sign In Page</h1>
             <button onClick={logGoogleUser}>
-                Sign in with Google
+                Sign in with Google Popup
             </button>
         </div>
     );

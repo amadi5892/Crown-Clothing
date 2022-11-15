@@ -1,16 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
-import Navigation from './routes/navigation/navigation.component';
-import Authentication from './routes/authentication/authentication';
 
 import Home from './routes/home/home.component';
-
-const Shop = () => {
-  return (
-    <div>
-      <h1>I am the shop now page</h1>
-    </div>
-  );
-}
+import Navigation from './routes/navigation/navigation.component';
+import Authentication from './routes/authentication/authentication';
+import Shop from './routes/shop/shop.component';
 
 const App = () => {
   return ( 
